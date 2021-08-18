@@ -1,0 +1,13 @@
+.layout {
+  width: 100%;
+  height: 100%;
+  &__wrap {
+    max-width: 1440px;
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+    background: url("../img/bg_main.png") 0 0 no-repeat;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
