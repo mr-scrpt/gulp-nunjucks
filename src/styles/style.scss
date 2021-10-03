@@ -1,21 +1,45 @@
-@import "./animation.scss";
-@import "./img.scss";
-@import "./button.scss";
-@import "./link.scss";
-//@import "./fonts.scss";
-@import "./reset.scss";
-@import "./page.scss";
-@import "./layout.scss";
-@import "./header.scss";
-@import "./logo.scss";
-@import "./screen.scss";
-@import "./discount.scss";
-@import "./run-string.scss";
-@import "./utp.scss";
-@import "./contact.scss";
+/* Библиотеки */
+@import "./lib/smartgrid.scss";
+/* INIT */
 
-html,
+@import "./custom/reset.scss";
+@import "./custom/var.scss";
+@import "./custom/mixins.scss";
+@import "./custom/fonts.scss";
+@import "./custom/animation.scss";
+
+/* Фундоментальные Блоки */
+@import "./fundamental/page.scss";
+@import "./fundamental/layout.scss";
+@import "./fundamental/header.scss";
+@import "./fundamental/footer.scss";
+
+/* Блоки */
+@import "./blocks/button.scss";
+@import "./blocks/input.scss";
+@import "./blocks/textarea.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/img.scss";
+@import "./blocks/title.scss";
+@import "./blocks/icon.scss";
+@import "./blocks/link.scss";
+@import "./blocks/deco.scss";
+@import "./blocks/text.scss";
+@import "./blocks/relative-box.scss";
+
+/* Блоки Верстки */
+@import "./logo.scss";
+
+/* Навигация */
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+	overflow-y: scroll;
+}
+
 body {
-  width: 100%;
-  min-height: 100vh;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
 }
