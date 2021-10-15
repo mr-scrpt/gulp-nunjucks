@@ -6,18 +6,18 @@ const { config } = require("../config");
 const { data } = require("../../src/data/index");
 
 exports.nunjucks = gulp.task("nunjucks", () => {
-    return gulp
-        .src(config.src + config.nunjucks.src)
-        .pipe(gulpData(() => data))
-        .pipe(
-            nunjucksRender({
-                path: ["src/views"],
-            })
-        )
-        .pipe(gulp.dest(config.build + config.nunjucks.dest))
-        .pipe(
-            browserSync.reload({
-                stream: true,
-            })
-        );
+	return gulp
+		.src(config.src + config.nunjucks.src)
+		.pipe(gulpData(() => data))
+		.pipe(
+			nunjucksRender({
+				path: ["src/views"],
+			})
+		)
+		.pipe(gulp.dest(config.build + config.nunjucks.dest))
+		.pipe(
+			browserSync.reload({
+				stream: true,
+			})
+		);
 });
