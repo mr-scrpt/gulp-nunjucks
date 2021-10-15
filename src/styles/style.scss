@@ -1,12 +1,12 @@
 /* Библиотеки */
 @import "./lib/smartgrid.scss";
-/* INIT */
 
-@import "./custom/reset.scss";
-@import "./custom/var.scss";
-@import "./custom/mixins.scss";
-@import "./custom/fonts.scss";
-@import "./custom/animation.scss";
+/* INIT */
+@import "./preset/reset.scss";
+@import "./preset/var.scss";
+@import "./preset/mixins.scss";
+@import "./preset/fonts.scss";
+@import "./preset/animation.scss";
 
 /* Фундоментальные Блоки */
 @import "./fundamental/page.scss";
