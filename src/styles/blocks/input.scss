@@ -3,8 +3,8 @@
 	display: inline-flex;
 	touch-action: manipulation;
 	border-radius: 3px;
-	background-color: $color_light;
-	border: 1px solid $color_active;
+	background-color: white;
+	border: 1px solid yellow;
 	@include ts(border-color);
 }
 
@@ -27,17 +27,17 @@
 	border: 0;
 	outline: none;
 	background: none;
-	color: $color_base;
+	color: black;
 }
 
 /*Виды полей*/
 
 .input.input_view_error {
-	background-color: $color_passive;
+	background-color: red;
 }
 
 .input.input_view_success {
-	border-color: $color_base;
+	border-color: green;
 }
 
 /*Виды полей КОНЕЦ*/

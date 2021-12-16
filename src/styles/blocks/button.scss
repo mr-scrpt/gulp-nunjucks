@@ -8,8 +8,8 @@
 	padding: 0;
 	user-select: none;
 	outline: 0;
-	background: $color_passive;
-	border: 1px solid $color_passive;
+	background: yellow;
+	border: 1px solid red;
 	white-space: nowrap;
 	border-radius: 3px;
 	text-decoration: none;
@@ -21,7 +21,7 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		vertical-align: top;
-		color: $color_white;
+		color: blue;
 		text-transform: lowercase;
 		font-weight: 600;
 		letter-spacing: 0.12em;
@@ -29,8 +29,8 @@
 
 	/* HOVER */
 	&:hover {
-		background: $color_active;
-		border-color: $color_active;
+		background: yellow;
+		border-color: yellow;
 		cursor: pointer;
 	}
 }
@@ -52,28 +52,11 @@
 
 /*Виды кнопок*/
 .button.button_view {
-	&_s {
-		background: transparent;
-		& .button__text {
-			color: $color_base;
-		}
-	}
-
-	&_f {
+	&_secondary {
 		& .button__text {
 			text-transform: none;
 			letter-spacing: normal;
 			font-weight: 400;
-		}
-	}
-	&_t {
-		background: $color_light;
-		border-color: $color_light;
-		&:hover {
-			background: $color_dark;
-		}
-		& .button__text {
-			color: $color_base;
 		}
 	}
 }
